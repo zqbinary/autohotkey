@@ -22,4 +22,3 @@
     Send, {F5}
     Send, {Control}
     Return
-

@@ -49,7 +49,6 @@ MouseGetPos, x, y
 Mousemove, x+500, y-500
 Return
 
-
 ;右下
 !x::
 MouseGetPos, x, y

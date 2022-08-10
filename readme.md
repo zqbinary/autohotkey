@@ -4,9 +4,14 @@ autohotkey,下面简称 ahk 脚本
 项目背景：腱鞘炎越来越严重，尽量减少鼠标的使用
 
 # 编译
-把src 目录下的 *.ahk，编译打包 到 dist/ahk.ahk
+运行 ./merge.sh：把src 目录下的 *.ahk，编译打包 到 dist/ahk.ahk
 
-window 为该路径设置快捷方式，放到开机启动文件夹下面
+也可以自己选择ahk 文件，分别启用
+
+# 使用方法
+为编译好的文件 dist/ahk.ahk 设置快捷方式
+
+cmd+r 运行 shell:startup,把快捷方式放到开机启动文件夹里
 
 # 脚本功能
 ## checkScreenByKeyboard.ahk  
