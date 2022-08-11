@@ -1,4 +1,3 @@
-
 ;移动到右边屏幕，刷新
 
 ;移动到右边屏幕，刷新，返回原位
@@ -12,7 +11,7 @@
     MouseMove, xpos, ypos
     Send, {Control}
     MouseClick, Left
-    Return
+Return
 ;移动到右边屏幕，刷新
 !+F5::
     CoordMode, Mouse, Screen
@@ -22,4 +21,4 @@
     MouseClick, Left
     Send, {F5}
     Send, {Control}
-    Return
+Return

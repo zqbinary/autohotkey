@@ -18,7 +18,7 @@ cmd+r 运行 shell:startup,把快捷方式放到开机启动文件夹里
 我有三个屏幕，通过快捷键，快速移动鼠标到对应屏幕的中间
 
 ## mockClick.ahk  
-alt+c等于鼠标左键，从而激活窗口
+win+alt等于鼠标左键，从而激活窗口
 
 ## moveMouseByKeyboard.ahk  
 把qweasdzx 作为方位，配合alt 键，实现鼠标快速移动
