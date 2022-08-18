@@ -19,6 +19,10 @@ Return
 !a::
 	MouseGetPos, x, y
 	Mousemove, x-625, y
+	KeyWait a
+	;a长按不松，鼠标左键点击
+	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800)
+		MouseClick, Left
 	Send {LControl}
 Return
 
@@ -26,6 +30,10 @@ Return
 !d::
 	MouseGetPos, x, y
 	Mousemove, x+700, y
+	KeyWait d
+	;长按不松，鼠标左键点击
+	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800)
+		MouseClick, Left
 	Send {LControl}
 Return
 
