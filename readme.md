@@ -19,6 +19,7 @@ cmd+r 运行 shell:startup,把快捷方式放到开机启动文件夹里
 # 脚本功能
 ## toggleScreenByKeyboard.ahk  
 我有三个屏幕，通过快捷键，快速移动鼠标到对应屏幕的中间
+
 双击快捷键，鼠标左键也会被触发
 
 ## mockClick.ahk  

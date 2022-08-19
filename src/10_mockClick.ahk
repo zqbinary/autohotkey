@@ -19,5 +19,6 @@ Return
 		KeyWait, LAlt 
 		return
 	}
+	Sleep 150 
 	MouseClick, left
 return

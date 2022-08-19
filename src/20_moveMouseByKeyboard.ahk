@@ -22,7 +22,10 @@ Return
 	KeyWait a
 	;a长按不松，鼠标左键点击
 	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800)
+	{
+		Sleep 150 
 		MouseClick, Left
+	}
 	Send {LControl}
 Return
 
@@ -32,8 +35,11 @@ Return
 	Mousemove, x+700, y
 	KeyWait d
 	;长按不松，鼠标左键点击
-	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800)
+	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800) 
+	{
+		Sleep 150 
 		MouseClick, Left
+	}
 	Send {LControl}
 Return
 
