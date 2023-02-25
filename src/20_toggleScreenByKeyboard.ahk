@@ -8,7 +8,7 @@
 	Send {LControl}
 	KeyWait LAlt
 	;实现双击，鼠标激活
-	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800) 
+	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800)
 		MouseClick,Left
 return
 
@@ -17,7 +17,7 @@ return
 	MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
 	Send {LControl}
 	KeyWait LAlt
-	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800) 
+	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800)
 		MouseClick,Left
 return
 
@@ -25,6 +25,12 @@ return
 	CoordMode, Mouse, Screen
 	MouseMove, (A_ScreenWidth + 720), (450)
 	Send {LControl}
-	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800) 
+	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800)
 		MouseClick,Left
+return
+
+!4::
+	CoordMode, Mouse, Screen
+	MouseMove, (A_ScreenWidth // 2+40), (A_ScreenHeight-25)
+	Send {LControl}
 return
