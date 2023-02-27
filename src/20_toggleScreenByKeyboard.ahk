@@ -23,7 +23,8 @@ return
 
 !3::
 	CoordMode, Mouse, Screen
-	MouseMove, (A_ScreenWidth + 720), (450)
+	; MouseMove, (A_ScreenWidth + 720), (450)
+	MouseMove, (A_ScreenWidth + 960), (450)
 	Send {LControl}
 	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800) 
 		MouseClick,Left
