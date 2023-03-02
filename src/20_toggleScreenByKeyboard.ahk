@@ -14,7 +14,7 @@ return
 
 !2::
 	CoordMode, Mouse, Screen
-	MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
+	MouseMove, (A_ScreenWidth // 2)-20, (A_ScreenHeight // 2)
 	Send {LControl}
 	KeyWait LAlt
 	if(A_TimeSincePriorHotkey >300 and A_TimeSincePriorHotkey<800)
