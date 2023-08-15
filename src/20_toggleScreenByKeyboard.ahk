@@ -35,3 +35,9 @@ return
 	MouseMove, (A_ScreenWidth // 2+40), (A_ScreenHeight-25)
 	Send {LControl}
 return
+
+!5::
+	CoordMode, Mouse, Screen
+	MouseMove, (A_ScreenWidth -100), (A_ScreenHeight-25)
+	Send {LControl}
+return
