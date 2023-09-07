@@ -12,6 +12,8 @@
     Send, {Control}
     MouseClick, Left
 Return
+
+
 ;移动到右边屏幕，刷新
 !+F5::
     CoordMode, Mouse, Screen

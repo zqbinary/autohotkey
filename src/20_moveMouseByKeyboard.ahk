@@ -64,7 +64,22 @@ Return
 Return
 
 ; 右下
+; !x::
+; 	MouseGetPos, x, y
+; 	Mousemove, x+500, y+500
+; Return
+
+; !F2::
 !x::
-	MouseGetPos, x, y
-	Mousemove, x+500, y+500
+    CoordMode, Mouse, Screen
+    MouseGetPos, xpos, ypos 
+    x1 := (A_ScreenWidth+120)
+    y1 := 100
+    MouseMove,x1,y1 
+    Send, ^!z
+    sleep 5000
+    MouseMove, xpos, ypos
 Return
+!m::
+	Send, {WheelDown 3}
+return
