@@ -20,10 +20,10 @@ Return
 	MouseGetPos, x, y
 	Mousemove, x-625, y
 	KeyWait a
-	;a长按不松，鼠标左键点击 
+	;a长按不松，鼠标左键点击
 	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800)
 	{
-		Sleep 150 
+		Sleep 150
 		MouseClick, Left
 	}
 	Send {LControl}
@@ -34,10 +34,10 @@ Return
 	MouseGetPos, x, y
 	Mousemove, x+700, y
 	KeyWait d
-	;长按不松，鼠标左键点击 
-	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800) 
+	;长按不松，鼠标左键点击
+	if(A_TimeSinceThisHotkey >300 and A_TimeSinceThisHotkey<800)
 	{
-		Sleep 150 
+		Sleep 150
 		MouseClick, Left
 	}
 	Send {LControl}
@@ -51,16 +51,33 @@ Return
 Return
 
 ; 左下
-!z::
-	MouseGetPos, x, y
-	Mousemove, x-500, y+500
-	Send {LControl}
-Return
+; !z::
+; 	MouseGetPos, x, y
+; 	Mousemove, x-500, y+500
+; 	Send {LControl}
+; Return
 
+!z::
+	CoordMode, Mouse, Screen
+	MouseGetPos, xpos, ypos
+	; x1 := (A_ScreenWidth+120)
+	x1 := -120
+	y1 := 720
+	MouseMove,x1,y1
+	MouseClick, Left
+	Send, !t
+	sleep 600
+	MouseClick, Left
+	MouseMove, xpos, ypos
+	MouseClick, Left
+	Send, ^v
+Return
 ; 右上
 !e::
 	MouseGetPos, x, y
+
 	Mousemove, x+500, y-500
+
 Return
 
 ; 右下
@@ -71,14 +88,17 @@ Return
 
 ; !F2::
 !x::
-    CoordMode, Mouse, Screen
-    MouseGetPos, xpos, ypos 
-    x1 := (A_ScreenWidth+120)
-    y1 := 100
-    MouseMove,x1,y1 
-    Send, ^!z
-    sleep 5000
-    MouseMove, xpos, ypos
+	CoordMode, Mouse, Screen
+	MouseGetPos, xpos, ypos
+	; x1 := (A_ScreenWidth+120)
+	x1 := -120
+	y1 := 100
+	MouseMove,x1,y1
+	Send, ^!z
+	sleep 1500
+	MouseMove, xpos, ypos
+	Send, ^v
+	send, {Tab}
 Return
 !m::
 	Send, {WheelDown 3}

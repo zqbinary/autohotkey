@@ -4,7 +4,7 @@
 
 !1::
 	CoordMode, Mouse, Screen
-	MouseMove, (-960), (540)
+	MouseMove, (-930), (560)
 	Send {LControl}
 	KeyWait LAlt
 	;实现双击，鼠标激活
