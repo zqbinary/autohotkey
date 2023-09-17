@@ -57,7 +57,7 @@ Return
 ; 	Send {LControl}
 ; Return
 
-!z::
+!p::
 	CoordMode, Mouse, Screen
 	MouseGetPos, xpos, ypos
 	; x1 := (A_ScreenWidth+120)
@@ -70,6 +70,18 @@ Return
 	MouseClick, Left
 	MouseMove, xpos, ypos
 	MouseClick, Left
+	Send, ^v
+
+Return
+
+
+!z::
+	Send !{Tab}
+	sleep 600
+	Send, !t
+	sleep 500
+	Send, !{Tab}
+	sleep 600
 	Send, ^v
 Return
 ; 右上
