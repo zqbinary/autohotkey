@@ -16,7 +16,7 @@ Return
 Return
 
 ; 左移
-!a::
+!p::
 	MouseGetPos, x, y
 	Mousemove, x-625, y
 	KeyWait a
@@ -29,6 +29,13 @@ Return
 	Send {LControl}
 Return
 
+!a::
+	Send !{Tab}
+	sleep 600
+	Send, {Left}
+	sleep 500
+	Send, !{Tab}
+Return
 ; 右移
 !d::
 	MouseGetPos, x, y
@@ -57,21 +64,12 @@ Return
 ; 	Send {LControl}
 ; Return
 
-!p::
-	CoordMode, Mouse, Screen
-	MouseGetPos, xpos, ypos
-	; x1 := (A_ScreenWidth+120)
-	x1 := -120
-	y1 := 720
-	MouseMove,x1,y1
-	MouseClick, Left
-	Send, !t
+!v::
+	Send !{Tab}
 	sleep 600
-	MouseClick, Left
-	MouseMove, xpos, ypos
-	MouseClick, Left
-	Send, ^v
-
+	Send, {Space}
+	sleep 500
+	Send, !{Tab}
 Return
 
 
