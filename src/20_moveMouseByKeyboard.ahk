@@ -33,7 +33,9 @@ Return
 	Send !{Tab}
 	sleep 600
 	Send, {Left}
-	sleep 500
+	sleep 300
+	Send, {Space}
+	sleep 600
 	Send, !{Tab}
 Return
 ; 右移
@@ -68,7 +70,7 @@ Return
 	Send !{Tab}
 	sleep 600
 	Send, {Space}
-	sleep 500
+	sleep 600
 	Send, !{Tab}
 Return
 
@@ -100,8 +102,8 @@ Return
 !x::
 	CoordMode, Mouse, Screen
 	MouseGetPos, xpos, ypos
-	; x1 := (A_ScreenWidth+120)
-	x1 := -120
+	x1 := (A_ScreenWidth+120)
+	; x1 := -120
 	y1 := 100
 	MouseMove,x1,y1
 	Send, ^!z

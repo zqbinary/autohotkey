@@ -13,10 +13,10 @@ Return
 
 ; description:双击alt，等于鼠标左键
 
-~LAlt::
-	if (A_PriorHotkey = "" or A_PriorHotkey= ~LAlt or A_TimeSincePriorHotkey > 800)
+~Alt::
+	if (A_PriorHotkey = "" or A_PriorHotkey= ~Alt or A_TimeSincePriorHotkey > 800)
 	{
-		KeyWait, LAlt 
+		KeyWait, Alt 
 		return
 	}
 	Sleep 150 
